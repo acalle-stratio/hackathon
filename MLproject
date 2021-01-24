@@ -1,0 +1,8 @@
+name: mlflow-breast
+conda_env: conda.yaml
+entry_points:
+  main:
+    parameters:
+      training_data: string
+
+    command: python run.py --training-data={training_data} --conda-env=conda.yaml
